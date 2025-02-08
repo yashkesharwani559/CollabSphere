@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { AppLayout } from "./component/layout/AppLayout";
-import { SignUp } from "./pages/SignUp";
+import { SignUp, signUpData } from "./pages/SignUp";
 import { Index } from "./pages/Index";
 
 
@@ -17,6 +17,7 @@ const App = () => {
         {
           path : "/signup",
           element : <SignUp />,
+          action : signUpData,
         }
       ]
     },
